@@ -190,7 +190,7 @@ class PageRepository implements PageRepositoryInterface
                 $page->setStoreId($storeId);
             }
             $this->validateLayoutUpdate($page);
-            $this->validateRoutesDuplication($page);
+           // $this->validateRoutesDuplication($page);
             $this->resource->save($page);
             $this->identityMap->add($page);
         } catch (LocalizedException $exception) {
